@@ -71,7 +71,38 @@ html, body{
 
 #chottiheadings h5{
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: .5vw;
     text-align: right;
-    font-size: 15px;
+    font-size: 1vw;
+}
+
+#herofooter{
+    width: 100%;
+    padding: 0 2vw;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#herofooter a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #888;
+    border-radius: 50%;
 }
