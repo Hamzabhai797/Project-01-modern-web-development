@@ -10,11 +10,32 @@ html, body{
     height: 100%;
 }
 
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
 #main{
     width: 100%;
+    background-color: black;
 }
 
 #hero{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -55,13 +76,18 @@ html, body{
 }
 
 .blockText {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: red;
     width: fit-content;
 }
 
 .blockText h5{
+    background-color: yellow;
     text-transform: uppercase;
     font-size: 15px;
-    text-align: right;
+    text-align: right !important;
 }
 
 #chottiheadings{
@@ -145,13 +171,89 @@ html, body{
 }
 
 #about{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 20px;
     width: 100%;
     background-color: black;
     padding: 10vw 5vw;
+    padding-left: 40vw;
     color: white;
 }
 
+#textabout{
+    width: 27rem;
+    /* background-color: red; */
+}
+
+#textabout h5{
+    text-transform: capitalize;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p{
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
 #about img{
-    height: 15vw;
-    width: 15vw;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+#textabout a{
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#subscribe {
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 6vw;
+}
+
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+#footerleft{
+    display: flex;
+    gap: 18px;
+}
+
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
 }
