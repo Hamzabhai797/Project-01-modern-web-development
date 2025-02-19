@@ -29,7 +29,17 @@ function firstPageAnim(){
 }
 
 function circleChaptaKaro(){
+    // define default scale value
+    var xscale = 1;
+    var yscale = 1;
+
+    var xprev = 0;
+    var yprev = 0;
     window.addEventListener("mousemove", function(dets){
+        var xdiff = dets.clientX - xprev;
+        var ydiff = dets.clienty - yprev;
+        xprev = dets.clientX
+        yprev = dets.clienty
         
     })
 }
