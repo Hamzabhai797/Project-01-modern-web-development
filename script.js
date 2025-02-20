@@ -40,6 +40,9 @@ function circleChaptaKaro(){
         var ydiff = dets.clienty - yprev;
         xprev = dets.clientX
         yprev = dets.clienty
+
+        xscale = gsap.utils.clamp(.8,1.2, xdiff);
+        yscale = gsap.utils.clamp(.8,1.2, ydiff);
         
     })
 }
