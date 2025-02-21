@@ -28,6 +28,8 @@ function firstPageAnim(){
     })
 }
 
+var time;
+
 function circleChaptaKaro(){
     // define default scale value
     var xscale = 1;
@@ -44,6 +46,9 @@ function circleChaptaKaro(){
         yprev = dets.clienty
 
         circleMouseFollower(xscale, yscale);
+        this.setTimeout(function(){
+        document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`
+        }, 100);
         
     })
 }
