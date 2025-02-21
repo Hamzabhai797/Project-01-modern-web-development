@@ -36,13 +36,14 @@ function circleChaptaKaro(){
     var xprev = 0;
     var yprev = 0;
     window.addEventListener("mousemove", function(dets){
-        var xdiff = dets.clientX - xprev;
-        var ydiff = dets.clienty - yprev;
+
+        xscale = gsap.utils.clamp(.8,1.2, dets.clientX - xprev);
+        yscale = gsap.utils.clamp(.8,1.2, dets.clienty - yprev);
+
         xprev = dets.clientX
         yprev = dets.clienty
 
-        xscale = gsap.utils.clamp(.8,1.2, xdiff);
-        yscale = gsap.utils.clamp(.8,1.2, ydiff);
+        
         
     })
 }
