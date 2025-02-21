@@ -43,14 +43,14 @@ function circleChaptaKaro(){
         xprev = dets.clientX
         yprev = dets.clienty
 
-        
+        circleMouseFollower(xscale, yscale);
         
     })
 }
 
-function circleMouseFollower(){
+function circleMouseFollower(xscale,  yscale){
     window.addEventListener("mousemove", function(dets){
-        document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`
+        document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`
     });
 }
 circleMouseFollower()
