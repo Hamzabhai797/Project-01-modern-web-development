@@ -59,4 +59,4 @@ function circleMouseFollower(xscale,  yscale){
     });
 }
 circleMouseFollower()
-firstPageAnim()
+// firstPageAnim()
