@@ -61,3 +61,10 @@ function circleMouseFollower(xscale,  yscale){
 }
 circleMouseFollower()
 firstPageAnim()
+
+document.querySelectorAll(".elem")
+.forEach(function(elem){
+    elem.addEventListener("mousemove", function(dets){
+        console.log("hello")
+    })
+})
