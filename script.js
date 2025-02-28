@@ -67,4 +67,4 @@ document.querySelectorAll(".elem")
     elem.addEventListener("mousemove", function(dets){
         console.log("hello")
     });
-});
+})
